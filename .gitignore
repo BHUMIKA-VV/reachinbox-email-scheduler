@@ -1,0 +1,14 @@
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.next/
+web/.next/
+.env
+**/.env
+.DS_Store
+coverage/
+logs/
+*.log
+package-lock.json
+
