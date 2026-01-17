@@ -1,11 +1,15 @@
 {
-  "name": "reachinbox",
-  "private": true,
-  "version": "0.1.0",
-  "workspaces": [
-    "server",
-    "worker",
-    "web"
-  ]
+    "name": "reachinbox",
+    "private": true,
+    "version": "0.1.0",
+    "scripts": {
+        "build": "npm run -w web build",
+        "start": "npm run -w web start",
+        "typecheck": "npm run -w server typecheck && npm run -w worker typecheck && npm run -w web typecheck"
+    },
+    "workspaces": [
+        "server",
+        "worker",
+        "web"
+    ]
 }
-

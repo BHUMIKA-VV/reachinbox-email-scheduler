@@ -125,3 +125,6 @@ npm run -w worker build
 npm run -w web build
 ```
 
+## Notes
+- No cron or timers; Redis delayed jobs provide durability and automatic resumption.
+- Hour-based caps ensure large batches spread over successive hours.
